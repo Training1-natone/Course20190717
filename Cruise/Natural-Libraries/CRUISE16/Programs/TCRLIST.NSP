@@ -1,0 +1,36 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program TCRLIST.
+/**
+/** :author Training
+/* 
+DEFINE DATA 
+LOCAL USING NCCOMM-P /* Comm Parameters
+LOCAL USING NCCRUL-P /* Cruise Paramaters
+*
+LOCAL USING NCDATA-L
+
+LOCAL
+1 I (P10)
+*
+END-DEFINE
+*
+
+INPUT 'Number of records requested (for special offer) ' P-OFFERCOUNT
+
+CALLNAT "CRLIST-N" P-COM P-RESPONSE P-SELECTION P-NUMBER-OF-RECORDS P-CRUISE-DATA (*)
+
+WRITE 'number of selected records: ' P-NUMBER-OF-RECORDS 
+
+* FOR I FROM 1 TO P-NUMBER-OF-RECORDS
+* 
+* DISPLAY P-CRUISE-DATA.CRUISE-ID(I)(AL=5) P-CRUISE-DATA.CRUISE-START(I) (AL=10) P-CRUISE-DATA.DESTINATION-HARBOR(I)(AL=20) 
+* 
+* P-SELCRUISEID := VAL(P-CRUISE-DATA.CRUISE-ID(I))
+* 
+* 
+* END-FOR
+
+END

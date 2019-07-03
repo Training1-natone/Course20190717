@@ -1,0 +1,22 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Subprogram CROFFE-N.
+/**
+/** :author sagadmin
+/* 
+/* Natural Advanced exercise
+DEFINE DATA 
+PARAMETER USING NCCOMM-P /* Comm Parameters
+PARAMETER USING NCCRUL-P /* Cruise Paramaters
+*
+LOCAL USING NCDATA-L
+END-DEFINE
+EXPAND ARRAY P-CRUISE-DATA TO (1:P-OFFERCOUNT)
+P-CRUISE-DATA.CRUISE-ID(1) := 696
+P-CRUISE-DATA.CRUISE-ID(2) := 13
+P-CRUISE-DATA.CRUISE-ID(3) := 1484
+P-CRUISE-DATA.CRUISE-ID(4) := 196
+P-NUMBER-OF-RECORDS := 4
+END
