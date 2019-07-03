@@ -57,7 +57,7 @@
     <property name="natural.ant.repository.username" value="" />
     <property name="natural.ant.deploy.timestamp.check" value="NO" />
     <property name="natural.ant.deploy.retain.unchanged.sources" value="NO" />
-    <property name="natural.ant.deploy.full" value="YES" />
+    <property name="natural.ant.deploy.full" value="NO" />
     <property name="natural.ant.generate.old.data.area.format" value="NO" />
     <property name="natural.ant.library.steplib.nsv" value="CRUISE16;!;!RDCRUISE;!;!" />
     <property name="natural.ant.source.all.types" value="YES" />
