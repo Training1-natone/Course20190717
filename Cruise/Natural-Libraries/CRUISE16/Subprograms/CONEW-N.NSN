@@ -4,11 +4,11 @@
 * <Natural Source Header
 /** New Subprogram CRLIST-N.
 /**
-/** :author sag-training 
+/** :author sag-training new
 /* 
 DEFINE DATA 
 *
-* and new comment
+* and a second new comment
 PARAMETER USING NCCOMM-P
 PARAMETER USING NCCONW-P
 *
